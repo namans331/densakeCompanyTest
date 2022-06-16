@@ -1,0 +1,19 @@
+@import '../../../../styles/index.scss';
+.header-wrapper {
+    height: 72px;
+}
+.section {
+    height: calc(100vh - 91px);
+}
+
+.display-initial {
+    display: initial;
+    margin-right: 16px;
+}
+.container-wrapper {
+    height: auto; // deduct footer height
+    width: 100%;
+    float: left;
+    overflow: auto;
+    background: $app-background-color 0% 0% no-repeat padding-box;
+}

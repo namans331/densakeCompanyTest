@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-11" *ngIf="list">
+            <strong>Days To HardBlock Note: {{dateDiffInDays(list[0]?.sendDate, list[list?.length -1]?.sendDate)}}</strong>
+        </div>
+       
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row">&nbsp;</div>
+    <div class="row">
+       <div class="col-md-1">&nbsp;</div>
+       <div class="col-md-10">
+        <ul class="progressbar">
+            <li [ngClass]="{'active': i === 0}" *ngFor="let item of list; let i = index;">
+                <div class="stepIcon"><i class="fa fa-check"></i></div>
+                <p>{{item?.notificationType}} <i class="fa fa-info-circle"></i><br>{{item?.sendDate | date: 'dd.MM.yyyy'}}</p>
+                <p *ngIf="i < list.length - 1" class="days">{{dateDiffInDays(list[i].sendDate, list[i + 1].sendDate)}} d.</p>
+            </li>
+        </ul>
+       </div>
+       <div class="col-md-1">
+        &nbsp;
+       </div>
+    </div>
+</div>
+
+

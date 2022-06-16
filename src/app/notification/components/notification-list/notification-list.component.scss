@@ -1,0 +1,101 @@
+.filter {
+    display: flex;
+    justify-content: end;
+}
+
+ul li {
+    list-style-type: none;
+    float: left;
+    position: relative;
+    padding: 0 24px;
+}
+
+ul li .stepIcon {
+    border: 1px solid #ccc;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: table;
+    margin: 8px auto;
+}
+
+ul li.active .stepIcon {
+    background: #01364E;
+    border: 1px solid #01364E;
+}
+
+ul li.active .stepIcon i {
+    color: #fff;
+}
+
+ul li .stepIcon i {
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #999;
+}
+
+// ul li.active:after {
+//     background: #01364E;
+// }
+
+ul li:after {
+    height: 1px;
+    width: 50%;
+    right: -16px;
+    top: 25px;
+    background: #ccc;
+    position: absolute;
+    content: "";
+}
+
+ul li:before {
+    height: 1px;
+    width: 50%;
+    left: -16px;
+    top: 25px;
+    background: #ccc;
+    position: absolute;
+    content: "";
+}
+
+ul li:first-child:before {
+    display: none;
+}
+
+ul li:last-child:after {
+    display: none;
+}
+
+ul li p {
+    text-align: center;
+}
+
+ul li p i {
+    font-size: 16px;
+    font-weight: normal;
+    color: #999;
+}
+
+ul li p.days {
+    position: absolute;
+    right: -8px;
+    top: -10px;
+}
+
+.notification-bar {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.filterlebel {
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}

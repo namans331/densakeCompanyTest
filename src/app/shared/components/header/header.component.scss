@@ -1,0 +1,27 @@
+@import '../../../../styles/index.scss';
+.menu-bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $theme-background-color !important;
+    top: 0;
+    width: 100%;
+    color: $lnf-white;
+    z-index: 9;
+    padding: 20px 0px !important;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    border: 0;
+}
+.user-name {
+    font-family: Roboto-Medium,serif;
+    font-size: 18px;
+    display: flex !important;
+    justify-content: flex-end;
+}
+.uDetails { margin-top: 8px;}
+.uDetails .userName { padding: 0 10px !important; }

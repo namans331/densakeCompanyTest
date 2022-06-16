@@ -1,0 +1,43 @@
+[
+    {
+        "id": "1234567890",
+        "companyName": "Company A",
+        "notificationList": [
+            {
+                "id": "c4262a26-ecd5-11ec-8ea0-0242ac120002",
+                "sendDate": "2021-01-02",
+                "notificationType": "Introduction"
+            },
+            {
+                "id": "c4262a26-ecd5-11ec-8ea0-0242ac120003",
+                "sendDate": "2021-01-15",
+                "notificationType": "Alert"
+            },
+            {
+                "id": "c4262a26-ecd5-11ec-8ea0-0242ac120001",
+                "sendDate": "2021-01-25",
+                "notificationType": "Reminder"
+            },
+            {
+                "id": "c4262a26-ecd5-11ec-8ea0-0242ac120012",
+                "sendDate": "2021-02-04",
+                "notificationType": "Warning"
+            },
+            {
+                "id": "c4262a26-ecd5-11ec-8ea0-0242ac120013",
+                "sendDate": "2021-02-11",
+                "notificationType": "Alert"
+            },
+            {
+                "id": "c4262a26-ecd5-11ec-8ea0-0242ac120023",
+                "sendDate": "2021-02-19",
+                "notificationType": "Alert"
+            },
+            {
+                "id": "c4262a26-ecd5-11ec-8ea0-0242ac120023",
+                "sendDate": "2021-03-23",
+                "notificationType": "HardBlock Notes"
+            }
+        ]    
+    }
+]
